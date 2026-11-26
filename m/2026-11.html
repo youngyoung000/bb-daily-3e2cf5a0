@@ -1,0 +1,39 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="viewport" content="width=device-width,initial-scale=1"><title>월간 빵집 DB 점검 2026-11 (미리보기 · W48 데이터)</title><style>
+:root{--bg:#FBF9F6;--surface:#FFFFFF;--ink:#2A221B;--muted:#8A7D70;--line:#E8E1D8;--soft:#F3EEE7;--accent:#B4551E}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1B1714;--surface:#241F1B;--ink:#EAE3DB;--muted:#9C8F82;--line:#383028;--soft:#2C2620;--accent:#D9834E}}
+:root[data-theme="dark"]{--bg:#1B1714;--surface:#241F1B;--ink:#EAE3DB;--muted:#9C8F82;--line:#383028;--soft:#2C2620;--accent:#D9834E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",Pretendard,sans-serif;padding:28px 16px 60px}
+main{max-width:880px;margin:0 auto}
+h1{font-size:22px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+h2{font-size:15px;color:var(--muted);letter-spacing:.03em;margin-top:28px;border-bottom:1px solid var(--line);padding-bottom:6px}
+h3{font-size:14px}
+a{color:var(--accent)}
+.tw{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;margin:8px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{background:var(--soft);color:var(--muted);font-size:12px;text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.note{color:var(--muted);font-size:13px}
+code{font-size:12px;background:var(--soft);padding:1px 5px;border-radius:4px}
+ul{padding-left:20px}
+</style></head><body><p class="bbnav" style="max-width:880px;margin:0 auto 12px;font:12.5px -apple-system,sans-serif;color:#8A7D70"><a href="https://youngyoung000.github.io/bb-daily-3e2cf5a0/">데일리</a> · <a href="https://youngyoung000.github.io/bb-daily-3e2cf5a0/w/">주간 발굴</a> · <a href="https://youngyoung000.github.io/bb-daily-3e2cf5a0/m/">월간 DB 점검</a> · <a href="https://youngyoung000.github.io/bb-daily-3e2cf5a0/archive.html">지난 리포트</a> · 생성 11/26 17:55</p><main><h1>빵집 DB 점검 — 2026-11</h1>
+<p class="note">생성 2026-11-26 17:55 · 기준 주차 2026-W48 · 배치 rc=0</p>
+<p class="note">반영은 하지 않았다 — 어드민에서 확인 후 사람이 판단한다.</p>
+<h2>요약</h2>
+<div class="tw"><table><tr><th>항목</th><th>건수</th></tr><tr><td>폐업</td><td>0</td></tr><tr><td>주소 이전</td><td>1</td></tr><tr><td>주소 DB 불일치</td><td>1</td></tr><tr><td>상호 변경</td><td>1</td></tr><tr><td>행정구역 표기 상이</td><td>0</td></tr><tr><td>영업시간 DB 불일치</td><td>140</td></tr><tr><td>영업시간 변경</td><td>73</td></tr><tr><td>전화 DB 불일치</td><td>4</td></tr></table></div>
+<p>LOCALDATA 인허가 감지: 폐업 전이 1건</p>
+<h2>1. 폐업·이전 (LOCALDATA 인허가)</h2>
+<div class="tw"><table><tr><th>우선</th><th>빵집</th><th>감지</th><th>전 → 후</th><th>네이버 교차확인</th><th>어드민</th><th>네이버</th></tr><tr><td>🔴</td><td>홍시 베이크샵<br><sub>경기 수원시 팔달구 정조로886번길 15</sub></td><td>폐업 전이</td><td>영업/정상 → 폐업(2026-11-16)</td><td>파싱 실패(단독 판정 금지 — 육안 확인)</td><td></td><td><a href="https://pcmap.place.naver.com/restaurant/2003944790/information?fromPanelNum=1&amp;additionalHeight=76&amp;timestamp=202603242220&amp;locale=ko&amp;svcName=map_pcv5#" target="_blank" rel="noopener">링크</a></td></tr></table></div>
+<p><b>처리 원칙</b>: 폐업·이전 신호는 자동 숨김 금지(계획 §1-3). 어드민에서 확인 후 사람이 판단한다.</p>
+<p>전화 변경은 LOCALDATA 특성상 미기재·구번호가 많아 자동 반영 금지 — 확인 대상일 뿐이다(§1-4).</p>
+<h2>2. 네이버 정보 대조 — 주소·상호·폐업</h2>
+<div class="tw"><table><tr><th>빵집</th><th>변경유형</th><th>이전/DB</th><th>현재(네이버)</th><th>어드민</th></tr><tr><td>프레제 본점</td><td>주소 이전</td><td>부산 해운대구 마린시티2로 33 두산위브더제니스 상가 1층 (101-102호)</td><td>부산 해운대구 마린시티2로 33 두산위브더제니스 상가 1층 101-102호</td><td></td></tr><tr><td>화산애빵긋</td><td>주소 DB 불일치</td><td>전북 완주군 화산면 화산로 702-1 단독주택</td><td>전북 완주군 화산면 화산로 702</td><td></td></tr><tr><td>에센브로트</td><td>상호 변경</td><td>에센브로트</td><td>에센브로트 본점</td><td></td></tr></table></div>
+<h2>3. 행정구역 표기 상이 — 일괄 갱신 대상 0건</h2>
+<p>DB 가 구 행정구역명으로 남아 있다는 뜻이다(오탐 아님 — 인천 서구 분구·전남광주 통합 등). 한 번에 묶어 갱신한다.</p>
+<h2>4. 온라인샵 링크 사망</h2>
+<div class="tw"><table><tr><th>빵집</th><th>링크</th><th>상태</th><th>어드민</th></tr><tr><td>미니랜드</td><td><a href="https://api.bbangmorning.com/share/product/6ac0af53db9a7d53a" target="_blank" rel="noopener">https://api.bbangmorning.com/share/product/6ac0af53db9a7d53a</a></td><td>404</td><td></td></tr></table></div>
+<p>네이버 계열 363건(스마트스토어·<code>naver.me</code>)은 자동 판정이 불가해 확인하지 않았다 — <code>detections/&lt;주차&gt;/링크생존.csv</code> 에 <code>확인 제외</code>로 남아 있다.</p>
+<p>&lt;details&gt;&lt;summary&gt;보류 3건 (403·429·5xx·타임아웃 — 봇 차단 가능성, 사망 아님)&lt;/summary&gt;</p>
+<div class="tw"><table><tr><th>빵집</th><th>링크</th><th>상태</th></tr><tr><td>파란시</td><td><a href="https://paransi.co.kr/" target="_blank" rel="noopener">https://paransi.co.kr/</a></td><td>ERR:TimeoutError</td></tr><tr><td>오브니</td><td><a href="https://s.baemin.com/ay000EtxuyRkg" target="_blank" rel="noopener">https://s.baemin.com/ay000EtxuyRkg</a></td><td>502</td></tr><tr><td>88베이커리카페</td><td><a href="https://bakerycafe88.mycafe24.com/" target="_blank" rel="noopener">https://bakerycafe88.mycafe24.com/</a></td><td>ERR:SSLError</td></tr></table></div>
+<h2>5. 영업시간·전화 불일치 (참고)</h2></main></body></html>
